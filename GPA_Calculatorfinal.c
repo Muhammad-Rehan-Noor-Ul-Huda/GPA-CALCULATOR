@@ -293,8 +293,9 @@ int main(){
         printf("-> Below 50         | F      | 0.00             |\n");
         printf("To calculate GPA by entering marks in subjects press ->1\n");
         printf("To calculate GPA by directly entering GPA in that particular subject press ->2\n");
-        do{
+        do{ if(b>=1){printf("Entered incorrect try again:");}
             scanf("%d",&a);
+            b++;
         }while(a!=1 && a!=2);
         do{
     if(a==1){
